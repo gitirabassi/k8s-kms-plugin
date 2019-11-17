@@ -1,4 +1,4 @@
-module github.com/gitirabassi/libvault/cmd/k8s-kms-plugin
+module github.com/gitirabassi/k8s-kms-plugin
 
 go 1.12
 
