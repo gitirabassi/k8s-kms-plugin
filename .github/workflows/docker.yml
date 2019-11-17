@@ -8,7 +8,7 @@ jobs:
     - name: Publish to Registry
       uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
-        name: docker.pkg.github.com/gitirabassi/libvault/kms-plugin
+        name: docker.pkg.github.com/gitirabassi/k8s-kms-plugin/plugin
         username: gitirabassi
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
