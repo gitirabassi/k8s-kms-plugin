@@ -2,10 +2,10 @@
 Description=Kubernetes KMS plugin provider for HashiCorp Vault
 
 [Service]
-Environment=VAULT_ADDR=unix:///var/run/vaultagent.sock
+Environment=VAULT_ADDR=unix:///tmp/vaultagent.sock
 ExecStart=
-ExecStart=/usr/local/bin/kms-plugin \
-    -socketFile=unix:///var/run/vault-kms.sock \
+ExecStart=/usr/local/bin/k8s-kms-plugin \
+    -socketFile=unix:///tmp/vault-kms.sock \
     -transitPath=transit
     -keyNames=etcd
 
